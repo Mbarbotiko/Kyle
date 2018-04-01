@@ -55,6 +55,7 @@
             <button id="button8" class="btn btn-danger">8</button>
             <button id="button9" class="btn btn-danger">9</button>
             <button id="button10" class="btn btn-success">10</button>
+            
         </div>
 
 
@@ -67,18 +68,34 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
+            var audioDumbass = document.createElement("audio");
+            audioDumbass.setAttribute("src", "dumbass.mp3");
+
+              $(".buttons").on("click", ".orange", function () {
+                audioDumbass.play();
+            });
+            
+
+            var audioHarp = document.createElement("audio");
+            audioHarp.setAttribute("src", "harp.mp3");
+
             $("#bastard").hide()
             $("#love").hide()
 
+         
+          
 
 
             $(".btn-danger").click(function () {
+                audioDumbass.play();
                 $("#bastard").show();
                 $("#love").hide();
                 $('#bastard').fadeOut("slow");
+                
 
             })
             $(".btn-success").click(function () {
+                audioHarp.play();
                 $("#love").show()
                 $("#bastard").hide()
             })
