@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="icon" href="" type="image/jpg" sizes="16x16">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css">
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1 id="header">How Much Do you Love Margara?</h1>
+        <img src="MB.jpg">
+        <div id="bastard">
+            <h1>BASTARD!</h1>
+
+        </div>
+        <div id="love">
+            <h1>LOVE YOU TOO!!</h1>
+
+        </div>
+
+        <div class="buttons">
+            <button id="button1" class="btn btn-danger">1</button>
+            <button id="button2" class="btn btn-danger">2</button>
+            <button id="button3" class="btn btn-danger">3</button>
+            <button id="button4" class="btn btn-danger">4</button>
+            <button id="button5" class="btn btn-danger">5</button>
+            <button id="button6" class="btn btn-danger">6</button>
+            <button id="button7" class="btn btn-danger">7</button>
+            <button id="button8" class="btn btn-danger">8</button>
+            <button id="button9" class="btn btn-danger">9</button>
+            <button id="button10" class="btn btn-success">10</button>
+        </div>
+
+
+
+
+    </div>
+
+    <!-- JQuery -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#bastard").hide()
+            $("#love").hide()
+
+
+
+            $(".btn-danger").click(function () {
+                $("#bastard").show();
+                $("#love").hide();
+                $('#bastard').fadeOut("slow");
+
+            })
+            $(".btn-success").click(function () {
+                $("#love").show()
+                $("#bastard").hide()
+            })
+
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
